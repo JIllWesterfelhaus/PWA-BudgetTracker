@@ -1,3 +1,7 @@
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+//Connect to the Mongo DB
+mongoose.connect(MONGODB_URI);
+
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
