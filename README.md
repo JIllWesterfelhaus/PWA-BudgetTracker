@@ -32,7 +32,7 @@ Here is a YouTube link to a demo of the completed app:
 
 https://youtu.be/Okot1sAGrb4
 
-Screenshot of app: 
+
 ![screen shot](Develop/public/screenshot/screen%20shot.png)
 
 
