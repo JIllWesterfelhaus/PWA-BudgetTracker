@@ -1,11 +1,11 @@
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
-//Connect to the Mongo DB
-mongoose.connect(MONGODB_URI);
-
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
+const { init } = require("./models/transaction.js");
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+//Connect to the Mongo DB
+mongoose.connect(MONGODB_URI);
 
 const PORT = process.env.PORT || 4000;
 
